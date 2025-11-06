@@ -5,27 +5,27 @@ import About from "../Components/About/About";
 import Blogs from "../Components/Blogs/Blogs";
 import Contact from "../Components/Contact/Contact";
 
-
 export const router = createBrowserRouter([
-    {
-        path : "/", 
-        Component: Root,
-        children: [
-            {
-                index : true,
-                Component: Home
-            },
-            {
-                path: "about",
-                Component: About
-            },
-            {
-                path: "blogs",
-                Component: Blogs
-            },{
-                path: "contact",
-                Component: Contact
-            }
-        ]
-    }
-])
+  {
+    path: "/",
+    Component: Root,
+    children: [
+      {
+        index: true,
+        Component: Home,
+      },
+      {
+        path: "about",
+        Component: About,
+      },
+      {
+        path: "blogs",
+        Component: Blogs,
+      },
+      {
+        path: "contact",
+        Component: Contact,
+      },
+    ],
+  },
+]);
