@@ -1,3 +1,23 @@
+/* this is font link */
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+@theme{
+    --font-story-script: "Story Script", sans-serif;
+    --font-work-sens : "Work Sans", sans-serif;
+    --color-primary-main: #ff4f00
+}
+ul .active{
+
+    border-bottom: 1px solid #ff4f00;
+    color: #ff4f00;
+}
+/* this is for main button */
+.btn-main{
+    background-color: #ff4f00;
+    color: white;
+    border-radius: 30px;
+}

@@ -4,23 +4,24 @@ import { NavLink } from "react-router";
 const Navbar = () => {
   const links = (
     <>
-      <li className="text-lg font-medium">
+      <li className="text-lg font-medium mx-2">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li className="text-lg font-medium">
+      <li className="text-lg font-medium mx-2">
         <NavLink to="/about">About</NavLink>
       </li>
-      <li className="text-lg font-medium">
+      <li className="text-lg font-medium mx-2">
         <NavLink to="/blogs">Blogs</NavLink>
       </li>
-      <li className="text-lg font-medium">
+      <li className="text-lg font-medium mx-2">
         <NavLink to="/contact">Contact</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+   <div className="bg-base-300">
+     <div className="navbar w-11/12 mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,8 +47,8 @@ const Navbar = () => {
         </div>
 
         {/* lest section of navbar */}
-        <NavLink to="/" className="text-xl">
-          daisyUI
+        <NavLink to="/" className="text-4xl text-primary-main  font-story-script font-black">
+          jeTona
         </NavLink>
       </div>
 
@@ -78,12 +79,13 @@ const Navbar = () => {
           <input type="search" className="focus-within:outline-none" required placeholder="Search" />
         </label>
         <div className="avatar">
-          <div className="ring-primary ring-offset-base-100 w-8 rounded-full ring-2 ring-offset-2">
+          <div className="ring-primary-main ring-offset-base-100 w-8 rounded-full ring-2 ring-offset-2">
             <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
           </div>
         </div>
       </div>
     </div>
+   </div>
   );
 };
 
