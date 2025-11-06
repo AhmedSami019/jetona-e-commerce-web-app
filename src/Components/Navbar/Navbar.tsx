@@ -76,7 +76,7 @@ const Navbar = () => {
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input type="search" className="focus-within:outline-none" required placeholder="Search" />
+          <input type="search" className="focus-within:outline-none w-full" required placeholder="Search" />
         </label>
         <div className="avatar">
           <div className="ring-primary-main ring-offset-base-100 w-8 rounded-full ring-2 ring-offset-2">
