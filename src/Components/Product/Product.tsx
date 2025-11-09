@@ -1,3 +1,4 @@
+import { Star } from "lucide-react";
 import React from "react";
 
 const Product = ({ product }) => {
@@ -5,19 +6,20 @@ const Product = ({ product }) => {
   const { name, price, rating, stock, description, category, image } = product;
   return (
     <div className="card bg-base-100 shadow-sm">
-      <figure>
+      <figure className="w-full h-60">
         <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          src={image}
           alt="Shoes"
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Card Title</h2>
+        <h2 className="card-title">{name}</h2>
         <p>
-          A card component has a figure, a body part, and inside body there are
-          title and actions parts
+          {description}
         </p>
+        <p className="font-medium flex justify-between">Ratting: <span className="flex items-center gap-2">{rating} <Star size={18} stroke="gold" fill="gold"></Star></span></p>
         <div className="card-actions justify-end">
+          <p className="text-xl font-semibold">${price}</p>
           <button className="btn btn-primary">Buy Now</button>
         </div>
       </div>
