@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 
 const Error = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-5 gap-10 md:gap-20">
+    <div className="flex flex-col items-center justify-center p-5 gap-1 mt-10 md:mt-20 md:gap-20">
      <div className="text-center">
          <h1 className="text-9xl font-bold">404</h1>
       <h2 className="text-6xl font-medium">This Page Not Found</h2>
