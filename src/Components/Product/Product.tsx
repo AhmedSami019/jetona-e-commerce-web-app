@@ -1,9 +1,8 @@
 import { Star } from "lucide-react";
-import React from "react";
 
 const Product = ({ product }) => {
   console.log(product);
-  const { name, price, rating, stock, description, category, image } = product;
+  const { name, price, rating, description, image } = product;
   return (
     <div className="card bg-base-100 shadow-sm">
       <figure className="w-full h-60">
@@ -20,7 +19,7 @@ const Product = ({ product }) => {
         <p className="font-medium flex justify-between">Ratting: <span className="flex items-center gap-2">{rating} <Star size={18} stroke="gold" fill="gold"></Star></span></p>
         <div className="card-actions justify-end">
           <p className="text-xl font-semibold">${price}</p>
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn btn-main">Buy Now</button>
         </div>
       </div>
     </div>

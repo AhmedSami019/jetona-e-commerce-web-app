@@ -3,6 +3,8 @@ import { toast } from 'react-toastify';
 import Product from '../Product/Product';
 import { ArrowDownToLine, ArrowUpToLine } from 'lucide-react';
 
+
+
 const Products = () => {
 
     const [products, setProducts] = useState([])
@@ -25,15 +27,15 @@ const Products = () => {
 
     return (
         <div>
-            <h2 className='text-2xl'>this is products section</h2>
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
                 {
-                    updatedProducts.map((product, index) => <Product key={index} product={product}></Product>)
+                    updatedProducts.map((product, index) => <Product key={index} product={product} />)
                 }
             </div>
             <div className='flex justify-center'>
                 <button onClick={()=> setShowAll(!showAll)} className='btn btn-main my-10'>{!showAll? "Show all": "Show less"} {!showAll?<ArrowDownToLine size={22}></ArrowDownToLine>: <ArrowUpToLine size={22}></ArrowUpToLine>}</button>
             </div>
+            
         </div>
     );
 };

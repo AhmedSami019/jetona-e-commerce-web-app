@@ -10,6 +10,9 @@
     --font-work-sens : "Work Sans", sans-serif;
     --color-primary-main: #ff4f00
 }
+.btn-primary-main{
+    @apply bg-[#ff4f00]
+}
 ul .active{
 
     border-bottom: 1px solid #ff4f00;
@@ -20,6 +23,6 @@ ul .active{
     background-color: #ff4f00;
     color: white;
     border-radius: 30px;
-    font-size: 1.2rem;
-    padding: 20px
+    font-size: 1rem;
+    padding: 16px
 }
