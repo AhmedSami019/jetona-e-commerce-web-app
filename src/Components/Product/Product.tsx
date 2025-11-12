@@ -1,10 +1,10 @@
 import { Star } from "lucide-react";
+import { NavLink } from "react-router";
 
 const Product = ({ product }) => {
-  console.log(product);
-  const { name, price, rating, description, image } = product;
+  const { id, name, price, rating, description, image } = product;
   return (
-    <div className="card bg-base-100 shadow-sm">
+    <NavLink to={`/productDetails/${id}`} className="card bg-base-100 shadow-sm">
       <figure className="w-full h-60">
         <img
           src={image}
@@ -22,7 +22,7 @@ const Product = ({ product }) => {
           <button className="btn btn-main">Buy Now</button>
         </div>
       </div>
-    </div>
+    </NavLink>
   );
 };
 

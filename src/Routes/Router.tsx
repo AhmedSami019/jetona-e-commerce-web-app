@@ -5,6 +5,7 @@ import About from "../Pages/About/About";
 import Blogs from "../Pages/Blogs/Blogs";
 import Contact from "../Pages/Contact/Contact";
 import Error from "../Pages/Error/Error";
+import ProductsDetails from "../Pages/ProductsDetails/ProductsDetails";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ export const router = createBrowserRouter([
         path: "contact",
         Component: Contact,
       },
+      {
+        path: "productDetails/:productId",
+        loader: ()=> fetch('/product.json'),
+        Component: ProductsDetails
+      }
     ],
   },
 ]);
