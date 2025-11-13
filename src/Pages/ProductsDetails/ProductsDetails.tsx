@@ -1,7 +1,9 @@
 import { Star } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import type { Interface } from "readline";
+import ProductsLoadContext from "../../Context/ProductsLoadContext/ProductsLoadContext";
+import Product from "../../Components/Product/Product";
 
 interface Product {
   id: number;
@@ -15,7 +17,9 @@ interface Product {
   image: string;
 }
 
+
 const ProductsDetails = () => {
+ 
   // this is id form loader of route
   const { productId } = useParams();
   const [product, setProduct] = useState<Product | {}>({});
@@ -47,6 +51,13 @@ const ProductsDetails = () => {
   const { name, category, currency, price, stock, rating, description, image } : Interface =
     product ;
 
+// use context
+ const {products} = useContext(ProductsLoadContext)
+
+  const filterProducts = products.filter(p => p.category === category)
+
+
+    
   return (
     <div className="w-11/12 mx-auto ">
       <div className="flex flex-col md:flex-row gap-10 md:gap-20 py-10 mt-20 ">
@@ -95,11 +106,11 @@ const ProductsDetails = () => {
         </div>
       </div>
       {/* similar product section */}
-      <div>
+      <div className="space-y-5">
         <h2 className="text-4xl text-center font-semibold">Some similar categories products</h2>
-        <div>
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
           {
-
+          filterProducts.map(product => <Product key={product.id} product={product}></Product>)
           }
         </div>
       </div>
