@@ -26,3 +26,10 @@ ul .active{
     font-size: 1rem;
     padding: 16px
 }
+.btn-outline-main{
+    border: #ff4f00 solid 2px;
+    color: #ff4f00;
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 14px;
+}

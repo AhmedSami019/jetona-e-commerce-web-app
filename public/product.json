@@ -7,7 +7,7 @@
     "currency": "USD",
     "stock": 45,
     "rating": 4.5,
-    "description": "Noise-cancelling over-ear headphones with 30-hour battery life and Bluetooth 5.2.",
+    "description": "Noise-cancelling over-ear headphones with 30-hour battery life and Bluetooth 5.2. Designed for immersive sound with deep bass and crisp treble, ideal for travel, work, or workouts. Features comfortable ear cushions and a foldable design for easy portability.",
     "image": "../src/assets/products-image/bluetooth-headphones.jpg"
   },
   {
@@ -18,7 +18,7 @@
     "currency": "USD",
     "stock": 12,
     "rating": 4.7,
-    "description": "Adjustable mesh back office chair with lumbar support and padded seat cushion.",
+    "description": "Adjustable mesh back office chair with lumbar support and padded seat cushion. Promotes healthy posture during long working hours, featuring smooth-rolling wheels, breathable mesh, and height-adjustable armrests for customized comfort.",
     "image": "../src/assets/products-image/office-chair.jpg"
   },
   {
@@ -29,7 +29,7 @@
     "currency": "USD",
     "stock": 100,
     "rating": 4.3,
-    "description": "Reusable 1-liter water bottle with double-wall insulation and leak-proof lid.",
+    "description": "Reusable 1-liter water bottle with double-wall insulation and leak-proof lid. Keeps beverages cold for up to 24 hours or hot for 12 hours. Eco-friendly design made from premium-grade stainless steel, perfect for hiking, office, or gym use.",
     "image": "../src/assets/products-image/stainless-steel-bottle.jpg"
   },
   {
@@ -40,7 +40,7 @@
     "currency": "USD",
     "stock": 80,
     "rating": 4.6,
-    "description": "Wi-Fi-enabled LED bulb with app control, voice assistant compatibility, and 16M colors.",
+    "description": "Wi-Fi-enabled LED bulb with app control, voice assistant compatibility, and 16M colors. Create customized lighting scenes, schedules, and dimming options through your smartphone. Works with Alexa and Google Assistant for hands-free operation.",
     "image": "../src/assets/products-image/led-light.jpg"
   },
   {
@@ -51,7 +51,7 @@
     "currency": "USD",
     "stock": 30,
     "rating": 4.8,
-    "description": "Lightweight running shoes designed for comfort and performance with breathable mesh upper.",
+    "description": "Lightweight running shoes designed for comfort and performance with breathable mesh upper. Features responsive cushioning, durable rubber soles, and a flexible midsole for long-distance running or daily exercise.",
     "image": "../src/assets/products-image/sports-shoe.jpg"
   },
   {
@@ -62,7 +62,7 @@
     "currency": "USD",
     "stock": 20,
     "rating": 4.7,
-    "description": "55-inch 4K smart TV with HDR10+ and built-in streaming apps.",
+    "description": "55-inch 4K smart TV with HDR10+ and built-in streaming apps. Enjoy cinematic visuals, vivid color contrast, and powerful surround sound. Features multiple HDMI ports, Wi-Fi connectivity, and compatibility with Alexa and Chromecast.",
     "image": "../src/assets/products-image/smart-tv-4k.jpg"
   },
   {
@@ -73,7 +73,7 @@
     "currency": "USD",
     "stock": 75,
     "rating": 4.4,
-    "description": "RGB gaming mouse with adjustable DPI, ergonomic grip, and 8 programmable buttons.",
+    "description": "RGB gaming mouse with adjustable DPI, ergonomic grip, and 8 programmable buttons. Designed for speed and precision, ideal for FPS and MOBA gaming. Features customizable lighting and smooth glide tracking.",
     "image": "../src/assets/products-image/gaming-mouse.jpg"
   },
   {
@@ -84,7 +84,7 @@
     "currency": "USD",
     "stock": 50,
     "rating": 4.6,
-    "description": "Mechanical keyboard with blue switches, RGB lighting, and detachable wrist rest.",
+    "description": "Mechanical keyboard with blue switches, RGB lighting, and detachable wrist rest. Offers tactile feedback for gaming and typing efficiency. Features anti-ghosting keys, metal frame construction, and multiple lighting effects.",
     "image": "../src/assets/products-image/mechanicalkeyboards-2048px-1360.jpg"
   },
   {
@@ -95,7 +95,7 @@
     "currency": "USD",
     "stock": 25,
     "rating": 4.5,
-    "description": "Fitness smartwatch with GPS tracking, heart-rate monitor, and AMOLED display.",
+    "description": "Fitness smartwatch with GPS tracking, heart-rate monitor, and AMOLED display. Tracks steps, sleep, workouts, and oxygen levels. Offers smartphone notifications, water resistance, and multi-day battery life.",
     "image": "../src/assets/products-image/smart-watch.jpg"
   },
   {
@@ -106,7 +106,7 @@
     "currency": "USD",
     "stock": 60,
     "rating": 4.3,
-    "description": "Wireless earbuds with active noise cancellation and wireless charging case.",
+    "description": "Wireless earbuds with active noise cancellation and wireless charging case. Provides rich sound quality, clear calls with ENC microphones, and comfortable in-ear design for all-day wear.",
     "image": "../src/assets/products-image/Best-Noise-Canceling-Earbuds.jpg"
   },
   {
@@ -117,7 +117,7 @@
     "currency": "USD",
     "stock": 70,
     "rating": 4.7,
-    "description": "Eco-friendly non-slip yoga mat with 6mm cushioning for extra comfort.",
+    "description": "Eco-friendly non-slip yoga mat with 6mm cushioning for extra comfort. Ideal for yoga, Pilates, and stretching. Made from durable, odor-resistant material that’s easy to clean and carry.",
     "image": "../src/assets/products-image/black-yoga-mat-on.jpg"
   },
   {
@@ -128,7 +128,7 @@
     "currency": "USD",
     "stock": 120,
     "rating": 4.4,
-    "description": "10000mAh fast-charging portable power bank with USB-C and USB-A outputs.",
+    "description": "10000mAh fast-charging portable power bank with USB-C and USB-A outputs. Compact and lightweight, supports multiple device charging and built-in overcharge protection for safe travel use.",
     "image": "../src/assets/products-image/portable-powerbank.jpg"
   },
   {
@@ -139,7 +139,7 @@
     "currency": "USD",
     "stock": 90,
     "rating": 4.5,
-    "description": "1.7L stainless steel electric kettle with auto shut-off and boil-dry protection.",
+    "description": "1.7L stainless steel electric kettle with auto shut-off and boil-dry protection. Rapid boiling technology and ergonomic handle make it convenient for everyday tea or coffee brewing.",
     "image": "../src/assets/products-image/electric-ketlee.jpg"
   },
   {
@@ -150,7 +150,7 @@
     "currency": "USD",
     "stock": 40,
     "rating": 4.6,
-    "description": "HEPA air purifier removes 99.97% of airborne particles and allergens.",
+    "description": "HEPA air purifier removes 99.97% of airborne particles and allergens. Perfect for bedrooms or offices, with silent operation, filter replacement indicator, and multiple fan speeds.",
     "image": "../src/assets/products-image/AirPurifier.jpg"
   },
   {
@@ -161,7 +161,7 @@
     "currency": "USD",
     "stock": 15,
     "rating": 4.8,
-    "description": "Adjustable dumbbell set ranging from 5 to 52.5 lbs with quick-change mechanism.",
+    "description": "Adjustable dumbbell set ranging from 5 to 52.5 lbs with quick-change mechanism. Space-saving design perfect for home gyms, with durable steel plates and non-slip handles.",
     "image": "../src/assets/products-image/adjustable-dumbbell.jpg"
   },
   {
@@ -172,7 +172,7 @@
     "currency": "USD",
     "stock": 85,
     "rating": 4.2,
-    "description": "Genuine leather wallet with RFID blocking and slim design.",
+    "description": "Genuine leather wallet with RFID blocking and slim design. Includes multiple card slots, coin pocket, and a smooth zipper closure for style and security.",
     "image": "../src/assets/products-image/lather-wallet.jpg"
   },
   {
@@ -183,7 +183,7 @@
     "currency": "USD",
     "stock": 110,
     "rating": 4.3,
-    "description": "Fast wireless charging pad compatible with Qi-enabled devices.",
+    "description": "Fast wireless charging pad compatible with Qi-enabled devices. Supports up to 15W charging speed with overheat and overvoltage protection, and sleek non-slip design.",
     "image": "../src/assets/products-image/Wireless-Charging-Pad.jpg"
   },
   {
@@ -194,7 +194,7 @@
     "currency": "USD",
     "stock": 18,
     "rating": 4.7,
-    "description": "10-piece stainless steel cookware set compatible with all stovetops.",
+    "description": "10-piece stainless steel cookware set compatible with all stovetops. Features heat-resistant handles, even heat distribution, and a mirror-polished finish for professional cooking performance.",
     "image": "../src/assets/products-image/Stainless-Steel-Cookware-Set.jpg"
   },
   {
@@ -205,7 +205,7 @@
     "currency": "USD",
     "stock": 22,
     "rating": 4.4,
-    "description": "Portable mini projector with 1080p support and HDMI/USB connectivity.",
+    "description": "Portable mini projector with 1080p support and HDMI/USB connectivity. Compact and lightweight, ideal for home theater, presentations, or outdoor movie nights.",
     "image": "../src/assets/products-image/mini-projector.jpg"
   },
   {
@@ -216,7 +216,7 @@
     "currency": "USD",
     "stock": 55,
     "rating": 4.5,
-    "description": "Durable waterproof backpack with built-in USB charging port and anti-theft pocket.",
+    "description": "Durable waterproof backpack with built-in USB charging port and anti-theft pocket. Features multiple compartments for laptops, books, and travel accessories, perfect for students and commuters.",
     "image": "../src/assets/products-image/Backpack-with-USB-Port.jpg"
   },
   {
@@ -227,7 +227,7 @@
     "currency": "USD",
     "stock": 10,
     "rating": 4.6,
-    "description": "Smart robot vacuum with mapping navigation and voice control.",
+    "description": "Smart robot vacuum with mapping navigation and voice control. Automatically detects dirt zones, supports scheduled cleaning, and recharges itself when battery is low.",
     "image": "../src/assets/products-image/white-robotic-vacuum-cleaner.jpg"
   },
   {
@@ -238,7 +238,7 @@
     "currency": "USD",
     "stock": 25,
     "rating": 4.8,
-    "description": "Professional-grade espresso machine with steam wand and 15-bar pressure pump.",
+    "description": "Professional-grade espresso machine with steam wand and 15-bar pressure pump. Brews café-quality espresso, cappuccino, and latte with stainless steel build and easy maintenance.",
     "image": "../src/assets/products-image/essprosso-coffe-maker.jpg"
   },
   {
@@ -249,7 +249,7 @@
     "currency": "USD",
     "stock": 35,
     "rating": 4.4,
-    "description": "1080p wireless outdoor camera with motion detection and night vision.",
+    "description": "1080p wireless outdoor camera with motion detection and night vision. Weather-resistant with two-way audio and cloud storage support, offering peace of mind for home monitoring.",
     "image": "../src/assets/products-image/home-security-camera-ip-camera.jpg"
   },
   {
@@ -260,7 +260,7 @@
     "currency": "USD",
     "stock": 8,
     "rating": 4.7,
-    "description": "Adjustable height electric standing desk with dual-motor lift system.",
+    "description": "Adjustable height electric standing desk with dual-motor lift system. Enhances ergonomics and productivity, with programmable memory settings and sturdy frame for smooth transitions.",
     "image": "../src/assets/products-image/ElectricStandingDesk.jpg"
   },
   {
@@ -271,7 +271,7 @@
     "currency": "USD",
     "stock": 40,
     "rating": 4.6,
-    "description": "Water-resistant insulated parka jacket with detachable hood and fleece lining.",
+    "description": "Water-resistant insulated parka jacket with detachable hood and fleece lining. Designed for extreme cold weather, featuring multiple pockets and stylish design for comfort and warmth.",
     "image": "../src/assets/products-image/WinterParkaJacket.jpg"
   }
 ]
