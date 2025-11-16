@@ -1,45 +1,70 @@
 import { useContext, useState } from "react";
 import ProductsLoadContext from "../../Context/ProductsLoadContext/ProductsLoadContext";
+import Product from "../../Components/Product/Product";
+import { TypeAnimation } from "react-type-animation";
 
 const Categories = () => {
-const { products } = useContext(ProductsLoadContext);
+  const { products } = useContext(ProductsLoadContext);
+  console.log(products);
 
-interface Product {
-    category?: string | number | null;
-    [key: string]: any;
-}
-
-interface ProductsLoadContextType {
-    products: Product[];
-}
-
-const uniqueCategories: string[] = [
+  const uniqueCategories = [
     "All",
-    ...Array.from(
-        new Set(
-            (products as Product[]).map((product: Product) => String(product.category))
-        )
-    ),
-];
-const [isActive, setIsActive] = useState<string>("All");
+    ...new Set(products.map((product) => product.category)),
+  ];
+  const [isActive, setIsActive] = useState<string>("All");
+  const filterProducts: object =
+    isActive === "All"
+      ? products
+      : products.filter((p) => p.category == isActive);
+  console.log(filterProducts);
 
   return (
     <div className="mt-20 w-11/12 mx-auto">
+      {/* type animation  */}
+      <div className="text-center font-semibold">
+      <TypeAnimation
+        sequence={[
+          // Same substring at the start will only be typed out once, initially
+          "We produce products like Electronic",
+          1000, // wait 1s before replacing "Mice" with "Hamsters"
+          "We produce products like Furniture",
+          1000,
+          "We produce products like Sports",
+          1000,
+          "We produce products like Warble",
+          1000,
+        ]}
+
+        wrapper="span"
+        speed={20}
+        style={{ fontSize: "2em", display: "inline-block" }}
+        repeat={Infinity}
+      />
+      </div>
+
       {/* this is categories navbar */}
       <div>
+        <h4 className="text-3xl font-semibold">Categories</h4>
+        <div className="divider my-0"></div>
         {uniqueCategories.map((cat) => (
           <button
             key={cat}
             onClick={() => setIsActive(cat)}
-            className={`btn ${isActive === cat ? "btn-main" : "btn-base-main"} mr-4 mt-2`}
+            className={`btn mr-4 mt-2 ${
+              isActive === cat ? "btn-main" : "btn-base-main"
+            }`}
           >
             {cat}
           </button>
         ))}
-
-        
       </div>
 
+      {/* this is categories card section */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+        {filterProducts.map((product) => (
+          <Product product={product}></Product>
+        ))}
+      </div>
     </div>
   );
 };

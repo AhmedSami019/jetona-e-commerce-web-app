@@ -1,0 +1,40 @@
+{
+  "about": {
+    "name": "ShopEase",
+    "website": "https://www.shopease.com",
+    "founded": "2015",
+    "founder": "Emily Johnson",
+    "headquarters": "San Francisco, California, USA",
+    "mission": "To make online shopping simple, fast, and enjoyable for everyone by offering a wide range of products at competitive prices, with excellent customer service and seamless delivery.",
+    "vision": "To be the world’s most customer-centric online marketplace, connecting millions of shoppers with the products they love while supporting sustainability and ethical business practices.",
+    "values": [
+      "Customer First: Every decision is made with the customer in mind.",
+      "Innovation: Continuously improving technology and services to enhance the shopping experience.",
+      "Integrity: Honest practices in business, fair pricing, and transparent communication.",
+      "Sustainability: Minimizing environmental impact through eco-friendly packaging and responsible sourcing."
+    ],
+    "history": "ShopEase started as a small online bookstore in 2015, founded by Emily Johnson. Within a few years, it expanded into electronics, fashion, and home essentials. Today, ShopEase serves millions of customers worldwide, providing a seamless shopping experience across web and mobile platforms.",
+    "team": [
+      { "name": "Emily Johnson", "position": "Founder & CEO" },
+      { "name": "Michael Lee", "position": "CTO" },
+      { "name": "Sofia Martinez", "position": "Head of Marketing" },
+      { "name": "David Kim", "position": "Operations Manager" }
+    ],
+    "awards": [
+      "Best E-commerce Startup 2016",
+      "Top Online Retailer 2018",
+      "Customer Choice Award 2021"
+    ],
+    "contact": {
+      "email": "support@shopease.com",
+      "phone": "+1-800-555-1234",
+      "address": "123 Market Street, San Francisco, CA, USA"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/shopease",
+      "twitter": "https://twitter.com/shopease",
+      "instagram": "https://instagram.com/shopease",
+      "linkedin": "https://linkedin.com/company/shopease"
+    }
+  }
+}
