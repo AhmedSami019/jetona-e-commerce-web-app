@@ -1,0 +1,78 @@
+[
+  {
+    "name": "MERN Stack Overview",
+    "description": "The MERN stack is a modern, full-stack JavaScript framework consisting of MongoDB, Express.js, React, and Node.js. It enables developers to build powerful, scalable, and maintainable web applications using JavaScript across the entire stack. Its main strength lies in the seamless data flow from front-end to back-end through JSON, the non-blocking event-driven architecture, and the modular, component-based UI system. MERN supports rapid development, clean architecture, and highly interactive user interfaces.",
+    "image": "https://example.com/images/mern-stack.png"
+  },
+  {
+    "name": "MongoDB",
+    "description": "MongoDB is a NoSQL, document-oriented database that stores data in flexible JSON-like documents. Unlike relational databases that require predefined schemas and table relationships, MongoDB allows dynamic schema evolution, delivering high flexibility for rapidly changing application requirements. Data is organized within collections rather than tables, supporting embedded documents, arrays, geospatial queries, and advanced aggregation pipelines.",
+    "image": "https://example.com/images/mongodb.png",
+    "topicsContext": {
+      "Schema Design": "MongoDB schema design focuses on modeling documents according to application access patterns, embedding related data to optimize queries, and balancing normalization vs denormalization for performance.",
+      "Indexing": "Indexes in MongoDB improve query speed and efficiency. Techniques include single-field, compound, unique, text, geospatial, and hashed indexes, carefully applied to avoid write overhead.",
+      "Aggregation": "The Aggregation Pipeline processes data in stages, allowing grouping, sorting, filtering, joining, and transforming data directly within the database.",
+      "Security": "MongoDB security involves authentication, role-based access control (RBAC), encryption at rest, TLS/SSL for data in transit, auditing, and careful handling of sensitive information."
+    }
+  },
+  {
+    "name": "Express.js",
+    "description": "Express.js is a minimalist, fast, and flexible back-end web framework for Node.js. It simplifies the creation of HTTP APIs by wrapping routing, middleware composition, request parsing, and error handling into a clean and intuitive structure.",
+    "image": "https://example.com/images/expressjs.png",
+    "topicsContext": {
+      "Middleware": "Middleware functions in Express.js sit in the request-response pipeline and can manipulate requests, responses, and even terminate the pipeline for authentication or logging.",
+      "Routing": "Routing defines how Express responds to client requests based on URL and HTTP method. Nested routers and modular routes improve maintainability.",
+      "Security": "Security in Express involves Helmet for headers, input validation, protection against XSS/CSRF attacks, rate limiting, CORS handling, and proper session management.",
+      "Validation": "Input validation ensures safe and reliable data entry using libraries like Joi or express-validator to prevent injection attacks and logic errors."
+    }
+  },
+  {
+    "name": "React",
+    "description": "React is a front-end JavaScript library for building dynamic, interactive user interfaces through reusable components. It uses a declarative programming model, enabling developers to create predictable UI behavior and manage complex state flows.",
+    "image": "https://example.com/images/react.png",
+    "topicsContext": {
+      "Components": "React components are the building blocks of UI—functional or class-based. They encapsulate structure, styling, and behavior for reusability.",
+      "State Management": "State management involves handling local component state, global state with tools like Redux, Recoil, or Context API, and synchronizing with back-end APIs.",
+      "Hooks": "Hooks like useState, useEffect, useMemo, useCallback, and useRef allow functional components to manage state, side-effects, memoization, and references.",
+      "Performance": "React performance optimization includes memoization, lazy loading with React.lazy, code splitting, use of virtual DOM efficiently, and avoiding unnecessary re-renders."
+    }
+  },
+  {
+    "name": "Node.js",
+    "description": "Node.js is a runtime environment that executes JavaScript on the server side. Built on the V8 engine, Node uses an event-driven, non-blocking I/O model that makes it efficient for handling large numbers of concurrent requests.",
+    "image": "https://example.com/images/nodejs.png",
+    "topicsContext": {
+      "Event Loop": "The event loop allows Node.js to handle multiple concurrent requests without blocking the thread. It manages asynchronous operations like I/O efficiently.",
+      "Modules": "Node.js uses CommonJS and ES Modules for modular development. Modules encapsulate logic, enabling code reuse and maintainability.",
+      "Asynchronous Programming": "Node relies heavily on promises, async/await, streaming APIs, and callback patterns to handle non-blocking operations.",
+      "Security": "Node security includes safe handling of environment variables, avoiding injection attacks, proper authentication, validating input, and using HTTPS/TLS."
+    }
+  },
+  {
+    "name": "MERN Architecture",
+    "description": "The MERN architecture is based on a layered approach. React handles the front-end UI and sends HTTP requests to Express.js, which processes incoming client requests and interacts with MongoDB for database operations. Node.js executes the Express server and manages asynchronous tasks.",
+    "image": "https://example.com/images/mern-architecture.png",
+    "layers": {
+      "Frontend": "Manages the user interface, routing, state management, and user interactions.",
+      "Backend": "Handles business logic, API routing, authentication, validation, and resource control.",
+      "Database": "Stores data in a structured yet flexible format using MongoDB documents.",
+      "Integration Layer": "RESTful APIs or GraphQL endpoints connect the front-end and back-end, enabling data flow."
+    }
+  },
+  {
+    "name": "MERN Use Cases",
+    "description": "The MERN stack is widely used for developing modern, scalable web applications. Its JavaScript-based stack allows developers to build interactive, real-time applications efficiently.",
+    "image": "https://example.com/images/mern-usecases.png",
+    "examples": [
+      "Real-time chat applications",
+      "Social media platforms",
+      "Analytics dashboards",
+      "E-commerce systems",
+      "Content management systems (CMS)",
+      "SaaS applications",
+      "Project management tools",
+      "Booking systems",
+      "Microservices and serverless APIs"
+    ]
+  }
+]

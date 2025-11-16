@@ -3,6 +3,7 @@ import ProductsLoadProvider from "../../Providers/ProductsLoadProvider/ProductsL
 const AllProvider = ({children}) => {
     return (
         <AllProvider>
+            
             <ProductsLoadProvider>
                 {children}
             </ProductsLoadProvider>

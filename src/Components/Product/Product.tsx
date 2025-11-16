@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
 import { NavLink } from "react-router";
 
+
 const Product = ({ product }) => {
   const { id, name, price, rating, image } = product;
   return (

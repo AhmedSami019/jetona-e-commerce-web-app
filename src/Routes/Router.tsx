@@ -6,6 +6,8 @@ import Blogs from "../Pages/Blogs/Blogs";
 import Contact from "../Pages/Contact/Contact";
 import Error from "../Pages/Error/Error";
 import ProductsDetails from "../Pages/ProductsDetails/ProductsDetails";
+import Login from "../Pages/Login/Login";
+import Categories from "../Pages/Categories/Categories";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +18,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+      },
+      {
+        path: 'categories',
+        Component: Categories
       },
       {
         path: "about",
@@ -33,6 +39,10 @@ export const router = createBrowserRouter([
         path: "productDetails/:productId",
         loader: ()=> fetch('/product.json'),
         Component: ProductsDetails
+      },
+      {
+        path: '/login',
+        Component: Login
       }
     ],
   },
