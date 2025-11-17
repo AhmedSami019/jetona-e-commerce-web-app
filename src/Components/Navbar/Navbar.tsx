@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import { NavLink } from "react-router";
+import ProductsLoadContext from "../../Context/ProductsLoadContext/ProductsLoadContext";
 
 const Navbar = () => {
+
+  const priceData = useContext(ProductsLoadContext)
+
   const links = (
     <>
       <li className="text-lg font-medium mx-2">

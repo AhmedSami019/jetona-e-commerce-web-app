@@ -14,7 +14,7 @@ const About = () => {
       });
   }, []);
 
-  const { founded, founder, headquarters, mission, vision, history, awards } =
+  const { founded, founder, headquarters, mission, vision, history, awards }: object =
     about;
   console.log(awards);
 
