@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import ProductsLoadContext from "../../Context/ProductsLoadContext/ProductsLoadContext";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const { login } = useContext(ProductsLoadContext);
@@ -19,10 +20,15 @@ const Login = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const pass = e.target.password.value;
-
-    console.log(typeof email, typeof pass);
     const result = login(email, pass);
-    console.log(result);
+    
+    if (result.success) {
+      Swal.fire({
+        title: "Login successful",
+        icon: "success",
+        timer: 1500
+      });
+    }
   };
 
   return (
@@ -58,7 +64,12 @@ const Login = () => {
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                   </g>
                 </svg>
-                <input type="email" name="email" placeholder="mail@site.com" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="mail@site.com"
+                  required
+                />
               </label>
               <div className="validator-hint hidden">
                 Enter valid email address
@@ -106,7 +117,11 @@ const Login = () => {
                 <a className="link link-hover">Forgot password?</a>
               </div>
               {error && <p className="text-red-500, text-sm">{error}</p>}
-              <input type="submit" value="Login" className="btn bg-[#ff4f00] text-white rounded-md flex " />
+              <input
+                type="submit"
+                value="Login"
+                className="btn bg-[#ff4f00] text-white rounded-md flex "
+              />
             </form>
           </div>
         </div>

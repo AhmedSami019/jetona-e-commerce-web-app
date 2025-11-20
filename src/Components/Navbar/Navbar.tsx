@@ -3,8 +3,8 @@ import { NavLink } from "react-router";
 import ProductsLoadContext from "../../Context/ProductsLoadContext/ProductsLoadContext";
 
 const Navbar = () => {
-  const priceData = useContext(ProductsLoadContext);
-  const [isLogin, setIsLogin] = useState(false);
+  const {priceData, user, isLogin} = useContext(ProductsLoadContext);
+  console.log(user);
 
   const links = (
     <>
@@ -96,7 +96,7 @@ const Navbar = () => {
 
 
 {/* login section */}
-          {!isLogin ? (
+          {isLogin !== true ? (
             <NavLink to='/login' className="btn btn-main">login</NavLink>
           ) : (
             <div className="flex-none">
