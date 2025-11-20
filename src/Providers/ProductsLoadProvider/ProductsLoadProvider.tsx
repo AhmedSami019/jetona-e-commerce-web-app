@@ -24,6 +24,7 @@ const ProductsLoadProvider = ({children}) => {
     // function for login
     const correctEmail: string = "sami@gmail.com"
     const correctPass : string = "1234@27"
+    // this is login function
     const login = (email:string, password: string)=>{
         if(email === correctEmail && password === correctPass){
             setUser({email})
