@@ -10,7 +10,7 @@ const ProductsLoadProvider = ({children}) => {
     const [totalPrice, setTotalPrice] = useState(0)
     // this is for cart item
     const [cartItem, setCartItem] = useState([])
-    // this is for 
+    // this is for j
 
     useEffect(()=>{
         fetch("/product.json")
