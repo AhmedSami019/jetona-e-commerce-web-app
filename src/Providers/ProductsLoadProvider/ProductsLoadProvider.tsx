@@ -18,7 +18,26 @@ const ProductsLoadProvider = ({children}) => {
         .then(data => setProduct(data))
     },[])
 
-    const value = {products, totalPrice, setProduct}
+    // for user login 
+    const [user, setUser] = useState(null)
+
+    // function for login
+    const correctEmail: string = "sami@gmail.com"
+    const correctPass : string = "1234@27"
+    const login = (email:string, password: string)=>{
+        if(email === correctEmail && password === correctPass){
+            setUser({email})
+            return({success: true})
+        }else{
+            return({success: false, massage: "invalid email & password"})
+        }
+    }
+    // for user logout
+    const logout = ()=> {
+        setUser(null)
+    }
+
+    const value = {products, totalPrice, setProduct, user, setUser, login, logout}
 
     return (
         <ProductsLoadContext value={value}>
