@@ -19,6 +19,7 @@ interface Product {
 
 
 const ProductsDetails = () => {
+  const {handleAddToCart} = useContext(ProductsLoadContext)
  
   // this is id form loader of route
   const { productId } = useParams();
@@ -98,7 +99,7 @@ const ProductsDetails = () => {
                 </button>
               </div>
             </div>
-            <button className="btn btn-outline-main border-[">
+            <button onClick={()=> handleAddToCart(product)} className="btn btn-outline-main border-[">
               Add to cart
             </button>
             <button className="btn btn-main">Buy now</button>

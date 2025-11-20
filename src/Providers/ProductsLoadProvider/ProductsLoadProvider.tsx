@@ -8,7 +8,12 @@ const ProductsLoadProvider = ({ children }) => {
   const [totalPrice, setTotalPrice] = useState(0);
   // this is for cart item
   const [cartItem, setCartItem] = useState([]);
-  // this is for j
+//   add to cart function
+  const handleAddToCart = (product)=>{
+    setCartItem([...cartItem, product])  
+    setTotalPrice(totalPrice +  product.price)
+    console.log(cartItem);
+}
 
   useEffect(() => {
     fetch("/product.json")
@@ -48,6 +53,8 @@ const ProductsLoadProvider = ({ children }) => {
     setUser,
     login,
     logout,
+    handleAddToCart,
+    cartItem
   };
 
   return <ProductsLoadContext value={value}>{children}</ProductsLoadContext>;
