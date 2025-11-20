@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 import ProductsLoadContext from "../../Context/ProductsLoadContext/ProductsLoadContext";
 
 const Navbar = () => {
-  const {priceData, user, isLogin} = useContext(ProductsLoadContext);
+  const {priceData, user, isLogin, logout} = useContext(ProductsLoadContext);
   console.log(user);
 
   const links = (
@@ -167,7 +167,7 @@ const Navbar = () => {
                     <a>Settings</a>
                   </li>
                   <li>
-                    <a>Logout</a>
+                    <button onClick={logout}>Logout</button>
                   </li>
                 </ul>
               </div>

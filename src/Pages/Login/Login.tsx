@@ -21,12 +21,18 @@ const Login = () => {
     const email = e.target.email.value;
     const pass = e.target.password.value;
     const result = login(email, pass);
-    
+
     if (result.success) {
       Swal.fire({
         title: "Login successful",
         icon: "success",
-        timer: 1500
+        timer: 1500,
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Have issue in email and password",
       });
     }
   };

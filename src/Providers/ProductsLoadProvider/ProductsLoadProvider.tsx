@@ -36,6 +36,7 @@ const ProductsLoadProvider = ({ children }) => {
   // for user logout
   const logout = () => {
     setUser(null);
+    setIsLogin(false)
   };
 
   const value = {
