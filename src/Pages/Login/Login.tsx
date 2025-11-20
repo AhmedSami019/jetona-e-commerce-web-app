@@ -3,7 +3,7 @@ import ProductsLoadContext from "../../Context/ProductsLoadContext/ProductsLoadC
 import Swal from "sweetalert2";
 
 const Login = () => {
-  const { login } = useContext(ProductsLoadContext);
+  const { login, isLogin } = useContext(ProductsLoadContext);
 
   const [input, setInput] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
@@ -126,7 +126,7 @@ const Login = () => {
               <input
                 type="submit"
                 value="Login"
-                className="btn bg-[#ff4f00] text-white rounded-md flex "
+                className={`btn  rounded-md ${isLogin === true ? "btn-disabled" : "bg-[#ff4f00] text-white"}`}
               />
             </form>
           </div>
