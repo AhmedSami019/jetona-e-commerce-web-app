@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import contact from "../../assets/undraw_group-chat_4xw0.svg";
 import { AtSign, MapPinHouse, Phone } from "lucide-react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   type AboutType = {
@@ -17,6 +18,32 @@ const Contact = () => {
   const email: string = about?.contact?.email ?? "";
   const phone: string = about?.contact?.phone ?? "";
   const address: string = about?.contact?.address ?? "";
+
+  //   this is for submission
+  const [submit, setSubmit] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    setSubmit(true);
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You want to send this massage!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#ff4f00",
+      cancelButtonColor: "#6f6e72",
+      confirmButtonText: "Send",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Submitted!",
+          text: "Your massage has been deleted.",
+          icon: "success",
+          timer: 1500
+        });
+      }
+    });
+  };
 
   return (
     <div className="my-20 w-11/12 mx-auto">
@@ -46,7 +73,8 @@ const Contact = () => {
           </ul>
         </div>
         <div className="bg-[#2a3544] w-full md:w-8/12 p-10">
-          <form action="" className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <h2 className="text-xl text-white font-medium mb-5">Send Massage</h2>
+          <form onSubmit={handleSubmit} action="" className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {/* this is first name section */}
             <div>
               <label className="input validator w-full">
@@ -66,7 +94,7 @@ const Contact = () => {
                     <circle cx="12" cy="7" r="4"></circle>
                   </g>
                 </svg>
-                <input type="text" required placeholder="Username" />
+                <input type="text" required placeholder="first name" />
               </label>
             </div>
 
@@ -89,7 +117,7 @@ const Contact = () => {
                     <circle cx="12" cy="7" r="4"></circle>
                   </g>
                 </svg>
-                <input type="text" required placeholder="Username" />
+                <input type="text" required placeholder="last name" />
               </label>
             </div>
 
@@ -140,12 +168,12 @@ const Contact = () => {
                     ></path>
                   </g>
                 </svg>
-                <input type="tel" className="tabular-nums" required />
+                <input type="tel" className="tabular-nums" placeholder="phone" required />
               </label>
             </div>
             {/* this is text area */}
             <textarea
-              className="textarea w-full md:col-span-2 resize-none"
+              className="textarea w-full md:col-span-2 resize-none h-40"
               placeholder="What you want to know..."
             ></textarea>
             <input
