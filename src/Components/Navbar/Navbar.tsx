@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { NavLink } from "react-router";
 import ProductsLoadContext from "../../Context/ProductsLoadContext/ProductsLoadContext";
 
+
 const Navbar = () => {
   const {priceData, user, isLogin, logout, cartItem, totalPrice} = useContext(ProductsLoadContext);
 
