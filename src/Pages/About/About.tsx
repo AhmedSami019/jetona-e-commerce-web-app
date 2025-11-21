@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import service from "../../assets/service-24-7-concept-illustration_114360-7380.webp";
 import founderImg from "../../assets/464619541_865480199005121_9009118941012390343_n.jpg";
+import { AtSign, MapPinHouse, Medal, Phone } from "lucide-react";
 
 const About = () => {
   const [about, setAbout] = useState({});
@@ -24,9 +25,13 @@ const About = () => {
     awards = [],
     values = [],
   } = about as any;
+  // this is for contact area
+  const email: string = about?.contact?.email ?? "";
+  const phone: string = about?.contact?.phone ?? "";
+  const address: string = about?.contact?.address ?? "";
 
   return isDataLoaded === false ? (
-    <p>data is loading</p>
+    <span className="loading loading-dots loading-xl mx-auto"></span>
   ) : (
     <>
       <div className="mt-20 w-11/12 mx-auto my-10 space-y-2.5">
@@ -104,9 +109,10 @@ const About = () => {
             <div>
               {awards.map((award, index) => (
                 <p
-                  className="text-2xl font-medium italic mt-4 underline"
+                  className="text-2xl font-medium italic mt-4 flex items-center gap-4"
                   key={index}
                 >
+                  <Medal></Medal>
                   {award}
                 </p>
               ))}
@@ -114,7 +120,11 @@ const About = () => {
           </div>
           <div className="text-start lg:w-6/12">
             <h2 className="text-5xl font-semibold">Contact</h2>
-            {}
+            <ul className="space-y-4 mt-5">
+               <li className="flex gap-2 items-center text-black"><AtSign></AtSign>{email}</li>
+                <li className="flex gap-2 items-center text-black"><Phone></Phone>{phone}</li>
+                <li className="flex gap-2 items-center text-black"><MapPinHouse></MapPinHouse>{address}</li>
+            </ul>
           </div>
         </div>
       </div>
