@@ -33,6 +33,7 @@ const Login = () => {
         icon: "error",
         title: "Oops...",
         text: "Have issue in email and password",
+        timer: 1500,
       });
     }
   };

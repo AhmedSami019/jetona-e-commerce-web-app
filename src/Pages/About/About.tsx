@@ -18,14 +18,12 @@ const About = () => {
   const {
     founded,
     founder,
-    headquarters,
     mission,
     vision,
     history,
-    awards,
-    values
-  }: object = about;
-  console.log(awards);
+    awards = [],
+    values = [],
+  } = about as any;
 
   return isDataLoaded === false ? (
     <p>data is loading</p>
@@ -52,20 +50,28 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-medium italic">Our values</h2>
               <p>
-                {
-                  values.map(value => <div><span className="text-xl font-semibold mr-5">#</span>{value}</div>)
-                }
+                {values.map((value, index) => (
+                  <li key={index} className="ml-10">
+                    {value}
+                  </li>
+                ))}
               </p>
             </div>
           </div>
 
           <div className="lg:w-6/12 text-center space-y-3 lg:text-start">
-            <h2 className="text-5xl font-semibold">
-              Emtiaz Ahmed <span className="text-[#ff4f00]">Sami</span>
+            <h2 className="text-5xl text-center font-semibold">
+              {founder || "Emtiaz Ahmed Sami"}
             </h2>
-            <h2 className="text-2xl text-gray-500 italic">The Founder</h2>
+            <h2 className="text-2xl text-center text-gray-500 italic">
+              The Founder
+            </h2>
             <div className="w-8/12 mx-auto flex justify-center">
-              <img className="h-full rounded-xl" src={founderImg} alt="" />
+              <img
+                className="h-full rounded-xl"
+                src={founderImg}
+                alt={founder || ""}
+              />
             </div>
           </div>
         </div>
@@ -91,19 +97,11 @@ const About = () => {
           </div>
         </div>
 
-        {/* founder section */}
-        <div>
-          <div>
-            <img src="" alt="" />
-          </div>
-          <div></div>
-        </div>
-
         {/* award section */}
         <div className="pt-10 flex flex-col lg:flex-row justify-between gap-5 mt-10">
           <div>
             <h2 className="text-5xl font-semibold">Our Awards</h2>
-            <p>
+            <div>
               {awards.map((award, index) => (
                 <p
                   className="text-2xl font-medium italic mt-4 underline"
@@ -112,7 +110,7 @@ const About = () => {
                   {award}
                 </p>
               ))}
-            </p>
+            </div>
           </div>
           <div className="text-start lg:w-6/12">
             <h2 className="text-5xl font-semibold">Contact</h2>

@@ -5,7 +5,6 @@ import { TypeAnimation } from "react-type-animation";
 
 const Categories = () => {
   const { products } = useContext(ProductsLoadContext);
-  console.log(products);
 
   const uniqueCategories = [
     "All",
@@ -16,8 +15,6 @@ const Categories = () => {
     isActive === "All"
       ? products
       : products.filter((p) => p.category == isActive);
-  console.log(filterProducts);
-
   return (
     <div className="mt-20 w-11/12 mx-auto">
       {/* type animation  */}
@@ -62,7 +59,7 @@ const Categories = () => {
       {/* this is categories card section */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
         {filterProducts.map((product) => (
-          <Product product={product}></Product>
+          <Product key={product.id} product={product}></Product>
         ))}
       </div>
     </div>
