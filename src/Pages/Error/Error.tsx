@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import errorImage from "../../assets/products-image/error-image.png"
+import errorImage from "/products-image/error-image.png"
 import { ArrowLeft } from "lucide-react";
 
 const Error = () => {
