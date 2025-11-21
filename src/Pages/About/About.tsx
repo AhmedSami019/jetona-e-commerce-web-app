@@ -64,7 +64,7 @@ const About = () => {
             <p></p>
           </div>
           <div className="lg:w-6/12  rounded-xl">
-            <img className="lg:w-8/12 bg-gray-200 p-5 rounded-xl" src={service} alt="image is coming" />
+            <img className="lg:w-8/12 bg-gray-200 p-5 mx-auto lg:mx-0 rounded-xl" src={service} alt="image is coming" />
           </div>
         </div>
 

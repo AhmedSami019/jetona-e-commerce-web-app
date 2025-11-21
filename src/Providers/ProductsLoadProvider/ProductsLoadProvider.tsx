@@ -25,6 +25,9 @@ const ProductsLoadProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isLogin, setIsLogin] = useState(false);
 
+
+  // for blogs page
+  const [blogs, setBlogs] = useState([])
   // function for login
   const correctEmail: string = "sami@gmail.com";
   const correctPass: string = "1234@27";
@@ -54,7 +57,8 @@ const ProductsLoadProvider = ({ children }) => {
     login,
     logout,
     handleAddToCart,
-    cartItem
+    cartItem,
+    blogs
   };
 
   return <ProductsLoadContext value={value}>{children}</ProductsLoadContext>;
