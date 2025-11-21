@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import service from "../../assets/service-24-7-concept-illustration_114360-7380.webp";
-import founderImg from "../../assets/464619541_865480199005121_9009118941012390343_n.jpg"
+import founderImg from "../../assets/464619541_865480199005121_9009118941012390343_n.jpg";
 
 const About = () => {
   const [about, setAbout] = useState({});
@@ -23,6 +23,7 @@ const About = () => {
     vision,
     history,
     awards,
+    values
   }: object = about;
   console.log(awards);
 
@@ -30,24 +31,42 @@ const About = () => {
     <p>data is loading</p>
   ) : (
     <>
-      <div className="mt-20 w-11/12 mx-auto space-y-2.5">
+      <div className="mt-20 w-11/12 mx-auto my-10 space-y-2.5">
         {/* about section */}
         <div className="pt-10 flex flex-col lg:flex-row gap-5 justify-between bg-gray-200 px-5 py-20 rounded-xl">
-          <div className="space-y-4 lg:w-6/12">
-            <h2 className="text-5xl font-semibold">
-              About <span className="text-[#ff4f00]">jeTona</span>
-            </h2>
-            <p className="lg:w-10/12 text-xl text-gray-700">{mission}</p>
-            <p className="text-3xl font-medium italic">Founded in {founded}</p>
-            <p className="text-lg lg:w-10/12">
-              <span className="font-bold">History:</span> {history}
-            </p>
+          <div className="space-y-20 lg:w-6/12">
+            <div className="space-y-4">
+              <h2 className="text-5xl font-semibold">
+                About <span className="text-[#ff4f00]">jeTona</span>
+              </h2>
+              <p className="lg:w-10/12 text-xl text-gray-700">{mission}</p>
+            </div>
+            <div className="space-y-4">
+              <p className="text-3xl font-medium italic">
+                Founded in {founded}
+              </p>
+              <p className="text-lg lg:w-10/12 text-gray-700">
+                <span className="font-bold">History:</span> {history}
+              </p>
+            </div>
+            <div>
+              <h2 className="text-3xl font-medium italic">Our values</h2>
+              <p>
+                {
+                  values.map(value => <div><span className="text-xl font-semibold mr-5">#</span>{value}</div>)
+                }
+              </p>
+            </div>
           </div>
 
           <div className="lg:w-6/12 text-center space-y-3 lg:text-start">
-            <h2 className="text-5xl font-semibold">Emtiaz Ahmed <span className="text-[#ff4f00]">Sami</span></h2>
+            <h2 className="text-5xl font-semibold">
+              Emtiaz Ahmed <span className="text-[#ff4f00]">Sami</span>
+            </h2>
             <h2 className="text-2xl text-gray-500 italic">The Founder</h2>
-            <div className="h-99 flex justify-center"><img className="h-full rounded-xl" src={founderImg} alt="" /></div>
+            <div className="w-8/12 mx-auto flex justify-center">
+              <img className="h-full rounded-xl" src={founderImg} alt="" />
+            </div>
           </div>
         </div>
         {/* mission and vision section */}
@@ -64,7 +83,11 @@ const About = () => {
             <p></p>
           </div>
           <div className="lg:w-6/12  rounded-xl">
-            <img className="lg:w-8/12 bg-gray-200 p-5 mx-auto lg:mx-0 rounded-xl" src={service} alt="image is coming" />
+            <img
+              className="lg:w-8/12 bg-gray-200 p-5 mx-auto rounded-xl"
+              src={service}
+              alt="image is coming"
+            />
           </div>
         </div>
 
