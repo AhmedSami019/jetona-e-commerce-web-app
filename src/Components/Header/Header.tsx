@@ -1,6 +1,7 @@
 import React from 'react';
 
 import banner from "../../assets/Perfect-Ecommerce-Sales-Banner.webp"
+import { NavLink } from 'react-router';
 
 const Header = () => {
     return (
@@ -8,7 +9,7 @@ const Header = () => {
             <div className='lg:w-6/12 mx-auto space-y-5 text-center lg:text-start'>
                 <h2 className='text-5xl lg:text-7xl font-bold'>It's time to Explore something new </h2>
                 <p className='text-2xl text-gray-700'>we have too much collection of every type of products. From our website you get all original products. </p>
-                <button className='btn btn-main'>Shop Now</button>
+                <NavLink to={"/categories"} className='btn btn-main'>Shop Now</NavLink>
             </div>
             <div className='lg:w-6/12 mx-auto'><img className='rounded-xl w-full' src={banner} alt="" /></div>
         </div>
