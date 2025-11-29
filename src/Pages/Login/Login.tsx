@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import ProductsLoadContext from "../../Context/ProductsLoadContext/ProductsLoadContext";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router";
 
 const Login = () => {
   const { login, isLogin } = useContext(ProductsLoadContext);
@@ -16,6 +17,9 @@ const Login = () => {
     };
   }
 
+  // for navigation
+  const navigate = useNavigate();
+
   const handleLogin = (e: LoginFormEvent): void => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -28,6 +32,7 @@ const Login = () => {
         icon: "success",
         timer: 1500,
       });
+      navigate("/");
     } else {
       Swal.fire({
         icon: "error",
@@ -127,7 +132,9 @@ const Login = () => {
               <input
                 type="submit"
                 value="Login"
-                className={`btn  rounded-md ${isLogin === true ? "btn-disabled" : "bg-[#ff4f00] text-white"}`}
+                className={`btn  rounded-md ${
+                  isLogin === true ? "btn-disabled" : "bg-[#ff4f00] text-white"
+                }`}
               />
             </form>
           </div>
