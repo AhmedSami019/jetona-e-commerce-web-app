@@ -17,27 +17,6 @@ const Categories = () => {
       : products.filter((p) => p.category == isActive);
   return (
     <div className="mt-20 w-11/12 mx-auto">
-      {/* type animation  */}
-      <div className="text-center font-semibold">
-      <TypeAnimation
-        sequence={[
-          // Same substring at the start will only be typed out once, initially
-          "We produce products like Electronic",
-          1000, // wait 1s before replacing "Mice" with "Hamsters"
-          "We produce products like Furniture",
-          1000,
-          "We produce products like Sports",
-          1000,
-          "We produce products like Warble",
-          1000,
-        ]}
-
-        wrapper="span"
-        speed={20}
-        style={{ fontSize: "2em", display: "inline-block" }}
-        repeat={Infinity}
-      />
-      </div>
 
       {/* this is categories navbar */}
       <div>

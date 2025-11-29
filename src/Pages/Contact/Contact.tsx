@@ -76,7 +76,7 @@ const Contact = () => {
         <h2 className="text-xl text-white font-medium mb-5">Send Massage</h2>
           <form onSubmit={handleSubmit} action="" className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {/* this is first name section */}
-            <div>
+            <div className="w-full">
               <label className="input validator w-full">
                 <svg
                   className="h-[1em] opacity-50"
@@ -94,12 +94,12 @@ const Contact = () => {
                     <circle cx="12" cy="7" r="4"></circle>
                   </g>
                 </svg>
-                <input type="text" required placeholder="first name" />
+                <input className="w-full" type="text" required placeholder="first name" />
               </label>
             </div>
 
             {/* this is last name */}
-            <div>
+            <div className="w-full">
               <label className="input validator w-full">
                 <svg
                   className="h-[1em] opacity-50"
@@ -117,12 +117,12 @@ const Contact = () => {
                     <circle cx="12" cy="7" r="4"></circle>
                   </g>
                 </svg>
-                <input type="text" required placeholder="last name" />
+                <input className="w-full" type="text" required placeholder="last name" />
               </label>
             </div>
 
             {/* this is email section */}
-            <div>
+            <div className="w-full">
               <label className="input validator w-full">
                 <svg
                   className="h-[1em] opacity-50"
@@ -140,15 +140,12 @@ const Contact = () => {
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                   </g>
                 </svg>
-                <input type="email" placeholder="mail@site.com" required />
+                <input className="w-full" type="email" placeholder="mail@site.com" required />
               </label>
-              <div className="validator-hint hidden">
-                Enter valid email address
-              </div>
             </div>
 
             {/* this is phone section */}
-            <div>
+            <div className="w-full">
               <label className="input validator w-full">
                 <svg
                   className="h-[1em] opacity-50"
@@ -168,9 +165,10 @@ const Contact = () => {
                     ></path>
                   </g>
                 </svg>
-                <input type="tel" className="tabular-nums" placeholder="phone" required />
+                <input type="tel" className="tabular-nums w-full" placeholder="phone" required />
               </label>
             </div>
+            
             {/* this is text area */}
             <textarea
               className="textarea w-full md:col-span-2 resize-none h-40"
