@@ -8,19 +8,6 @@ import ProductsLoadContext from '../../Context/ProductsLoadContext/ProductsLoadC
 
 const Products = () => {
 
-    // const [products, setProducts] = useState([])
-
-    // useEffect(()=>{
-    //     try {
-    //         fetch("../../../public/product.json")
-    //         .then(res => res.json())
-    //         .then(data => setProducts(data))
-    //     } catch (error) {
-    //         toast.error("the data not fetched");
-    //         console.log(error);
-    //     }
-    // }, [])
-
     const {products} = useContext(ProductsLoadContext)
     const [showAll, setShowAll] = useState(false)
     const updatedProducts = showAll? products: products.slice(0, 8)
